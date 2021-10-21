@@ -1,20 +1,33 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+The purpose of this project is to determine the candidate's technical proficiency. 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# The Assignment
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+This application is supposed to solve the following use case:
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+As a user, I should be able to select one of the following cities (Bergen, Oslo, Stavanger, Trondheim) from a drop down list, and when I click the "See forecast" I should be presented with the lastest forecast.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The forecast should present the following information:
+- Timestamp
+- Temperature
+- Wind speed
+
+The application has been tested, and the following has been reported:
+
+- The drop down list only contains the following cities: Bergen, Oslo and Trondheim. Where is Stavanger?
+- When I wish to see the forecast for Bergen, I am shown the following: [object Object]
+- Nothing happens when I try to see the forecast for Oslo or Trondheum
+
+The assignment is to identify and fix the issues mentioned above. Should any of the the issues prove difficult to solve, the cause of the issue should at least be identified,
+
+# Getting started
+
+To start the application in visual studio code, navigate to /TechnicalAssessment-task-2 and execute the "dotnet run" command.
+
+To start the application using visual studio 2019, run the "TechnicalAssessment_task_2" project form within the IDE.
+
+# Addtional information
+
+There is no single correct way to solve this task. The most important thing is that you solve it in your own way, and be able to explain the decisions you made a long the way.
+
+If you have any questions, don't hesitate to contact me at thomcal@acos.no
