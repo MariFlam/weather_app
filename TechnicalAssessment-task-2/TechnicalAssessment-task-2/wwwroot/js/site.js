@@ -21,6 +21,11 @@ function getForecast() {
 function displayResults(forecast) {
     var lastestForecast = forecast.properties.timeseries[0];
     var output = document.createElement("span");
-    output.textContent = lastestForecast;
+    output.textContent = `Time: ${lastestForecast.time}`;
+    document.getElementById("forecast-output").appendChild(output);
+    output.textContent = `Time: ${lastestForecast.time}\nTemperature: ${lastestForecast.data.instant.details.air_temperature}\nWind Speed: ${lastestForecast.data.instant.details.wind_speed}`;
     document.getElementById("forecast-output").appendChild(output);
 }
+
+
+//\n Wind Speed: ${lastestForecast.data.instant.details.wind_speed }
